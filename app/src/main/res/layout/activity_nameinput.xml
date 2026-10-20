@@ -5,18 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="245dp"
-        android:layout_height="48dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.568" />
+    tools:context=".NameInput">
 
     <TextView
         android:id="@+id/textView"
@@ -28,20 +17,36 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294" />
+        app:layout_constraintVertical_bias="0.217" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="245dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#009688"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.581" />
+
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="237dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
