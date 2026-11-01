@@ -7,12 +7,22 @@
     android:layout_height="match_parent"
     tools:context=".NameInput">
 
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="241dp"
         android:layout_height="120dp"
         android:fontFamily="@font/customfont"
         android:gravity="center"
+        android:textColor="@color/material_dynamic_neutral30"
         android:text="Welcome to the Theory driving learning App! please enter your name"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,8 +36,9 @@
         android:id="@+id/continueButton"
         android:layout_width="245dp"
         android:layout_height="48dp"
-        android:backgroundTint="#009688"
+        android:backgroundTint="#00695C"
         android:text="Continue"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,5 +59,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.459" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
