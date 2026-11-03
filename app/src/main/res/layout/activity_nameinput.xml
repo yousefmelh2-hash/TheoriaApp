@@ -18,25 +18,55 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="241dp"
-        android:layout_height="120dp"
+        android:layout_width="233dp"
+        android:layout_height="92dp"
         android:fontFamily="@font/customfont"
         android:gravity="center"
+        android:text="Welcome to the Theory driving learning App!"
         android:textColor="@color/material_dynamic_neutral30"
-        android:text="Welcome to the Theory driving learning App! please enter your name"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintVertical_bias="0.093" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="201dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/customfont"
+        android:gravity="center"
+        android:text="please enter your name"
+        android:textColor="#FFBC00"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="271dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/customfont"
+        android:gravity="center"
+        android:text="You can change your name later in Settings"
+        android:textColor="#FFBC00"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
 
     <Button
         android:id="@+id/continueButton"
         android:layout_width="245dp"
         android:layout_height="48dp"
-        android:backgroundTint="#00695C"
+        android:backgroundTint="#10C5AC"
         android:text="Continue"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
