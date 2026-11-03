@@ -23,7 +23,6 @@ VideoView videoView;
         initComponents();
         startVideo();
         buttonListener();
-
     }
 
     private void buttonListener() {
@@ -31,10 +30,12 @@ VideoView videoView;
             @Override
             public void onClick(View v) {
                 String name=nameEt.getText().toString();
-                Toast.makeText(NameInput.this, "Welcome "+name, Toast.LENGTH_SHORT).show();
+                if (name.isEmpty()){Toast.makeText(NameInput.this, "Please enter your name", Toast.LENGTH_SHORT).show();}
+               else{ Toast.makeText(NameInput.this, "Welcome "+name, Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(NameInput.this,MainActivity.class);
                 intent.putExtra("name",name);
                 startActivity(intent);
+               }
             }
         });
     }
