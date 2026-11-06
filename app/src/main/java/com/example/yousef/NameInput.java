@@ -46,7 +46,7 @@ VideoView videoView;
                 "android.resource://" + getPackageName() + "/" + R.raw.vidd
         ));
 
-        videoView.setOnPreparedListener(mp -> {
+        videoView.setOnPreparedListener(mp -> { // launch when the video is ready for playing
             mp.setLooping(true);
             videoView.start();
         });

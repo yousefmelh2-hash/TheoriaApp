@@ -9,12 +9,13 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button5"
+        android:id="@+id/btnSettings"
         android:layout_width="114dp"
         android:layout_height="73dp"
         android:background="@drawable/custom_button"
-        android:text="Button"
+        android:text="הגדרות"
         android:textColor="#FFFFFF"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.717"
@@ -23,12 +24,13 @@
         app:layout_constraintVertical_bias="0.477" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button4"
+        android:id="@+id/btnTrain"
         android:layout_width="114dp"
         android:layout_height="73dp"
         android:background="@drawable/custom_button"
-        android:text="Button"
+        android:text="תרגול"
         android:textColor="#FFFFFF"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.252"
@@ -37,11 +39,12 @@
         app:layout_constraintVertical_bias="0.343" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button3"
+        android:id="@+id/btnStats"
         android:layout_width="114dp"
         android:layout_height="73dp"
         android:background="@drawable/custom_button"
-        android:text="Button"
+        android:text="סטטיסטיקה"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,11 +54,12 @@
         app:layout_constraintVertical_bias="0.477" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button7"
+        android:id="@+id/btnAboutMe"
         android:layout_width="100dp"
         android:layout_height="57dp"
         android:background="@drawable/custom_button"
-        android:text="اقرائ عني"
+        android:text="About me"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,11 +69,12 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button8"
+        android:id="@+id/btnContactMe"
         android:layout_width="100dp"
         android:layout_height="57dp"
         android:background="@drawable/custom_button"
-        android:text="تواصل"
+        android:text="Contact me"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,11 +84,12 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button6"
+        android:id="@+id/btnSimulation"
         android:layout_width="114dp"
         android:layout_height="73dp"
         android:background="@drawable/custom_button"
-        android:text="Button"
+        android:text="מבחן סימולציה"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
