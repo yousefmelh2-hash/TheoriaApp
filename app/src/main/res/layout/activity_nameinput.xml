@@ -85,22 +85,21 @@
         android:id="@+id/nameEt"
         android:layout_width="237dp"
         android:layout_height="46dp"
+        android:background="@drawable/name_input_background"
         android:ems="10"
-        android:hint="  Name"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:maxLength="25"
         android:padding="10dp"
         android:singleLine="true"
-        android:maxLength="25"
         android:text=""
-        android:inputType="textPersonName"
-        android:background="@drawable/name_input_background"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.483" />
+        app:layout_constraintVertical_bias="0.445" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

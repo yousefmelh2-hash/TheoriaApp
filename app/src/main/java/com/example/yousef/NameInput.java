@@ -30,7 +30,12 @@ VideoView videoView;
             @Override
             public void onClick(View v) {
                 String name=nameEt.getText().toString();
-                if (name.isEmpty()){Toast.makeText(NameInput.this, "Please enter your name", Toast.LENGTH_SHORT).show();}
+                if (name.isEmpty()){
+                    if (name.isEmpty()) {
+                        nameEt.setError("The item name cannot be empty.");
+                        nameEt.requestFocus(); // Brings focus directly to the invalid field
+                    }
+                }
                else{ Toast.makeText(NameInput.this, "Welcome "+name, Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(NameInput.this,MainActivity.class);
                 intent.putExtra("name",name);
