@@ -32,7 +32,7 @@ VideoView videoView;
                 String name=nameEt.getText().toString();
                 if (name.isEmpty()){
                     if (name.isEmpty()) {
-                        nameEt.setError("The item name cannot be empty.");
+                        nameEt.setError("The name cannot be empty.");
                         nameEt.requestFocus(); // Brings focus directly to the invalid field
                     }
                 }
