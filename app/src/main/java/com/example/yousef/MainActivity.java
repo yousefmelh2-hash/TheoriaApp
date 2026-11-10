@@ -5,14 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-Button btnTrain, btnStats, btnAboutMe, btnContactMe, btnSimulation, btnSettings;
+Button btnPractice, btnStats,  btnSimulation, btnSettings;
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,10 +19,32 @@ Button btnTrain, btnStats, btnAboutMe, btnContactMe, btnSimulation, btnSettings;
     }
 
     private void setListeners() {
-        btnContactMe.setOnClickListener(new View.OnClickListener() {
+
+        btnSimulation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,ContactMeActivity.class);
+                intent =new Intent(MainActivity.this, ChoosePracticeType.class);
+                startActivity(intent);
+            }
+        });
+        btnPractice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent =new Intent(MainActivity.this, TimeSettingForExam.class);
+                startActivity(intent);
+            }
+        });
+        btnSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent =new Intent(MainActivity.this, Settings.class);
+                startActivity(intent);
+            }
+        });
+        btnStats.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent =new Intent(MainActivity.this, Statistics.class);
                 startActivity(intent);
             }
         });
@@ -33,10 +52,8 @@ Button btnTrain, btnStats, btnAboutMe, btnContactMe, btnSimulation, btnSettings;
 
     private void initComponents() {
         btnSettings=findViewById(R.id.btnSettings);
-        btnTrain=findViewById(R.id.btnTrain);
+        btnPractice =findViewById(R.id.btnTrain);
         btnStats=findViewById(R.id.btnStats);
-        btnAboutMe=findViewById(R.id.btnAboutMe);
-        btnContactMe=findViewById(R.id.btnContactMe);
         btnSimulation=findViewById(R.id.btnSimulation);
     }
 }

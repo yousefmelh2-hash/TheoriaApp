@@ -14,29 +14,14 @@
         android:layout_height="73dp"
         android:background="@drawable/custom_button"
         android:text="הגדרות"
-        android:textColor="#FFFFFF"
         android:textAllCaps="false"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.717"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnTrain"
-        android:layout_width="114dp"
-        android:layout_height="73dp"
-        android:background="@drawable/custom_button"
-        android:text="תרגול"
-        android:textColor="#FFFFFF"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.252"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.343" />
+        app:layout_constraintVertical_bias="0.527" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnStats"
@@ -51,37 +36,7 @@
         app:layout_constraintHorizontal_bias="0.252"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnAboutMe"
-        android:layout_width="100dp"
-        android:layout_height="57dp"
-        android:background="@drawable/custom_button"
-        android:text="About me"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.729"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnContactMe"
-        android:layout_width="100dp"
-        android:layout_height="57dp"
-        android:background="@drawable/custom_button"
-        android:text="Contact me"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.286"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.527" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSimulation"
@@ -96,6 +51,37 @@
         app:layout_constraintHorizontal_bias="0.717"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.343" />
+        app:layout_constraintVertical_bias="0.393" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTrain"
+        android:layout_width="114dp"
+        android:layout_height="73dp"
+        android:background="@drawable/custom_button"
+        android:text="תרגול"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="325dp"
+        android:layout_height="105dp"
+        android:fontFamily="@font/montserratboldfont"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="Welcome!, what are we doing today?"
+        android:textColor="#B32323"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

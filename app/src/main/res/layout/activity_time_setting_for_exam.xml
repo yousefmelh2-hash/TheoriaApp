@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeSettingForExam">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn10mins"
+        android:layout_width="114dp"
+        android:layout_height="73dp"
+        android:background="@drawable/custom_button"
+        android:text="10 mins"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn20mins"
+        android:layout_width="114dp"
+        android:layout_height="73dp"
+        android:background="@drawable/custom_button"
+        android:text="20 mins"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn20mins"
+        android:layout_width="114dp"
+        android:layout_height="73dp"
+        android:background="@drawable/custom_button"
+        android:text="20 mins"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCustomTime"
+        android:layout_width="137dp"
+        android:layout_height="71dp"
+        android:background="@drawable/custom_button"
+        android:text="Enter custom time"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn15mins"
+        android:layout_width="114dp"
+        android:layout_height="73dp"
+        android:background="@drawable/custom_button"
+        android:text="15 mins"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinue"
+        android:layout_width="168dp"
+        android:layout_height="52dp"
+        android:background="@drawable/custom_button"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.924" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn40mins"
+        android:layout_width="114dp"
+        android:layout_height="73dp"
+        android:background="@drawable/custom_button"
+        android:text="40 mins"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="325dp"
+        android:layout_height="105dp"
+        android:fontFamily="@font/montserratboldfont"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="Or you can enter a time you like"
+        android:textColor="#B32323"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
