@@ -2,6 +2,8 @@ package com.example.yousef;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -49,8 +51,22 @@ Button btnPractice, btnStats,  btnSimulation, btnSettings;
             }
         });
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.app_menuhelp, menu); // Inflate the menu
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.menu_contactme) {
+            /*Intent intent = new Intent(this, TipsActivity.class);*/
+            //   startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item); // Handle other menu items if needed
+    }
 
-    private void initComponents() {
+    private void initComponents() { // חיבור רכיבים ל-XML
         btnSettings=findViewById(R.id.btnSettings);
         btnPractice =findViewById(R.id.btnTrain);
         btnStats=findViewById(R.id.btnStats);
