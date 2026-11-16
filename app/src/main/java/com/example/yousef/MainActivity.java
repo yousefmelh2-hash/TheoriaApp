@@ -25,14 +25,14 @@ Button btnPractice, btnStats,  btnSimulation, btnSettings;
         btnSimulation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent =new Intent(MainActivity.this, ChoosePracticeType.class);
+                intent =new Intent(MainActivity.this, TimeSettingForExam.class);
                 startActivity(intent);
             }
         });
         btnPractice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent =new Intent(MainActivity.this, TimeSettingForExam.class);
+                intent =new Intent(MainActivity.this, Practice.class);
                 startActivity(intent);
             }
         });
