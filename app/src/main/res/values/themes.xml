@@ -7,5 +7,14 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.TheoriaApp" parent="Base.Theme.TheoriaApp" />
+    <style name="Theme.TheoriaApp" parent="Base.Theme.TheoriaApp" /> <!-- Inherits common styles to avoid code duplication and allows design changes without modifying the base theme. -->
+
+    <style name="Theme.TheoriaApp.NoActionBar"
+        parent="Base.Theme.TheoriaApp">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
 </resources>
