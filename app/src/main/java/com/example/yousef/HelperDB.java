@@ -32,14 +32,14 @@ public class HelperDB extends SQLiteOpenHelper {
         copyDatabase(context); // Copies assets/driving_b_db.db to the device on first run
     }
     private void copyDatabase(Context context) {
-        File dbFile = context.getDatabasePath(DB_NAME);
-        if (dbFile.exists()) return;
+        File dbFile = context.getDatabasePath(DB_NAME); //הנתיב שבו נשמר הקובץ בטלפון
+        if (dbFile.exists()) return; // אם נמצא אז יוצאים ואם לא אז ממשיכים ומעתיקים את הקובץ
 
-        dbFile.getParentFile().mkdirs();
-        try (InputStream is = context.getAssets().open(DB_NAME);
-             OutputStream os = new FileOutputStream(dbFile)) {
+        dbFile.getParentFile().mkdirs(); // יוצר את תיקיית האב שבה אמור להישמר מסד הנתונים, אם היא עדיין לא קיימת
+        try (InputStream is = context.getAssets().open(DB_NAME); //  assets – אחראי לקרוא מידע מקובץ המקור שנמצא בתיקיית InputStream.
+             OutputStream os = new FileOutputStream(dbFile)) { //    OutputStream – אחראי לכתוב מידע לקובץ היעד במכשיר.
             byte[] buffer = new byte[1024];
-            int length;
+            int length;         // מעתיקים את הקובץ במערך של בתים (bytes)
             while ((length = is.read(buffer)) > 0) {
                 os.write(buffer, 0, length);
             }
@@ -63,12 +63,12 @@ public class HelperDB extends SQLiteOpenHelper {
 
     // 3. בטיחות בדרכים
     public Question getBetihutBadrachimQuestion() {
-        return getRandomQuestionByCategory("בטיחות בדרכים"); // אם לא שינית את השם ב-DB, כתוב כאן "בטיחות"
+        return getRandomQuestionByCategory("בטיחות בדרכים");
     }
 
     // 4. הכרה לאוטו
     public Question getHakaratHarechevQuestion() {
-        return getRandomQuestionByCategory("הכרה לאוטו"); // אם לא שינית את השם ב-DB, כתוב כאן "הכרת הרכב"
+        return getRandomQuestionByCategory("הכרה לאוטו");
     }
 
     // מתודת עזר פנימית שמונעת שכפול קוד ומבצעת את השליפה בפועל
@@ -77,11 +77,11 @@ public class HelperDB extends SQLiteOpenHelper {
         Question q = null;
 
         Cursor cursor = db.rawQuery(
-                "SELECT * FROM " + TABLE_QUESTIONS + " WHERE " + COL_CATEGORY + " = ? ORDER BY RANDOM() LIMIT 1",
+                "SELECT * FROM " + TABLE_QUESTIONS + " WHERE " + COL_CATEGORY + " = ? ORDER BY RANDOM() LIMIT 1", // שליפת עמודה אחת כאשר מקבלים את השם שלה
                 new String[]{categoryName}
         );
 
-        if (cursor.moveToFirst()) {
+        if (cursor.moveToFirst()) {//  אם קיימת רשומה ושקר אחרת true
             q = new Question(
                     cursor.getInt(cursor.getColumnIndexOrThrow(COL_ID)),
                     cursor.getString(cursor.getColumnIndexOrThrow(COL_CATEGORY)),
